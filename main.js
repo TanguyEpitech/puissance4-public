@@ -141,7 +141,6 @@ class connect4 {
         for (let a = 0; a <= this.cols; a++) {
             for (let m = 0; m <= this.line; m++) {
 
-
                 if ($(div_tab[m].children[m + a]).hasClass("blue") || $(div_tab[m].children[m - a]).hasClass("blue")) {
                     winblue++;
                     winyellow = 0;
