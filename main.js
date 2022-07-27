@@ -173,13 +173,17 @@ class connect4 {
 
             if (this.compt == 1) {
                 var color = "yellow";
-                var audio = new Audio('SWSH_Whoosh 6 (ID 1799)_LS.wav');
-                audio.play();
+                
+
+                var joueur0 =  document.querySelector("#joueur")
+                joueur0.innerHTML = "Joueur 2 ";
                 this.compt = 0;
             } else {
                 var color = "blue";
-                var audio = new Audio('SWSH_Whoosh 6 (ID 1799)_LS.wav');
-                audio.play();
+                var joueur1 =  document.querySelector("#joueur")
+
+           joueur1.innerHTML = "Joueur 1 ";
+
                 this.compt = 1;
             }
             for (let f = 0; f <= this.map.length; f++) {
